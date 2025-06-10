@@ -1,0 +1,6 @@
+1;Max Payne REMAKE;55.99;maxpayneremake.jpg
+2;Red Dead Redemption III;89.99;rdr3.jpg
+3;GTA VI;99.99;gta6.jpg
+4;L.A Noire Parte 2;59.99;LAnoirePart2.jpg
+5;BULLY 2;79.99;bully2.jpg
+6;Manhunt 3;19.99;manhunt3.jpg
