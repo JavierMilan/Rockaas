@@ -16,14 +16,10 @@ function cargarProductosDesdeTxt($ruta) {
                 ];
             }
         }
-
         fclose($archivo);
     }
-
     return $productos;
 }
-
-
 $productos = cargarProductosDesdeTxt("includes/productos.txt");
 
 function validarUsuario($archivo, $usuario, $clave) {
@@ -38,5 +34,4 @@ function validarUsuario($archivo, $usuario, $clave) {
     }
     return false;
 }
-
 ?>

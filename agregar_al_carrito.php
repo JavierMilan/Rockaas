@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['producto_id'])) {
         $_SESSION['carrito'] = [];
     }
 
-    // CORRECTO: guardar solo número
     if (!isset($_SESSION['carrito'][$producto_id]) || !is_numeric($_SESSION['carrito'][$producto_id])) {
         $_SESSION['carrito'][$producto_id] = 1;
     } else {

@@ -5,7 +5,7 @@ include "utils.php";
 $productos = cargarProductosDesdeTxt("includes/productos.txt");
 $carrito = $_SESSION['carrito'] ?? [];
 
-// Eliminar producto individual
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['eliminar_id'])) {
     $idEliminar = $_POST['eliminar_id'];
     unset($_SESSION['carrito'][$idEliminar]);
