@@ -23,7 +23,7 @@ function cargarProductosDesdeTxt($ruta) {
     return $productos;
 }
 
-// Ejemplo de uso
+
 $productos = cargarProductosDesdeTxt("includes/productos.txt");
 
 function validarUsuario($archivo, $usuario, $clave) {

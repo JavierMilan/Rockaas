@@ -2,10 +2,9 @@
 session_start();
 include "utils.php";
 
-// Cargar productos
 $productos = cargarProductosDesdeTxt("includes/productos.txt");
 
-// Obtener el carrito
+
 $carrito = $_SESSION['carrito'] ?? [];
 
 if (empty($carrito)) {
@@ -13,10 +12,10 @@ if (empty($carrito)) {
     exit();
 }
 
-// Ruta donde guardar la venta (puedes cambiarla)
+
 $rutaVentas = "includes/ventas.txt";
 
-// Construir línea de venta
+
 $lineaVenta = "Fecha: " . date("Y-m-d H:i:s") . "\n";
 
 $totalGeneral = 0;
@@ -33,10 +32,10 @@ foreach ($carrito as $id => $cantidad) {
 $lineaVenta .= "TOTAL: " . number_format($totalGeneral, 2) . " €\n";
 $lineaVenta .= "-----------------------------\n";
 
-// Guardar en el archivo de ventas
+
 file_put_contents($rutaVentas, $lineaVenta, FILE_APPEND);
 
-// Vaciar carrito
+
 unset($_SESSION['carrito']);
 ?>
 

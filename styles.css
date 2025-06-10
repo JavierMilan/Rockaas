@@ -176,8 +176,8 @@ body {
 }
 .row{
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 5px; /* espacio entre los elementos */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5px; 
 }
 @media(max-width:1444px){
   .row{
